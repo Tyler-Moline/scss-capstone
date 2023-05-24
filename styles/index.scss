@@ -1,0 +1,13 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  background-color: #676767;
+  .intro {
+    height: 500px;
+    background-image: url("../images/statue-of-liberty.jpg");
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
+  }
+}
