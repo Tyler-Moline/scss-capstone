@@ -1,0 +1,8 @@
+@mixin pink-hover {
+  box-shadow: #ea1e63 0px 0px 20px;
+  cursor: pointer;
+}
+
+@mixin pink-letter {
+  color: #ea1e63;
+}

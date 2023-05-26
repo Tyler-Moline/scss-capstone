@@ -2,12 +2,18 @@ body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  background-color: #676767;
+  background-color: white;
   font-family: "Noto Sans", sans-serif;
 }
 body a {
   text-decoration: none;
   color: black;
+}
+body .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 body .page .header {
   background-color: white;
@@ -17,7 +23,7 @@ body .page .header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 101;
 }
 body .page .header .logo-left,
 body .page .header nav {
@@ -29,7 +35,11 @@ body .page .header nav .more-btn {
   border-radius: 25px;
   background-color: #ea1e63;
   color: white;
-  box-shadow: grey 0px 3px 5px;
+}
+body .page .header .logo-left .more-btn:hover,
+body .page .header nav .more-btn:hover {
+  box-shadow: #ea1e63 0px 0px 20px;
+  cursor: pointer;
 }
 body .page .header nav {
   font-size: 12px;
@@ -38,23 +48,182 @@ body .page .header nav {
   justify-content: space-evenly;
   align-items: center;
 }
+body .page .header nav .nav-link:hover {
+  color: #ea1e63;
+}
+body .page .intro {
+  height: 650px;
+  width: 100%;
+  background-color: black;
+  z-index: 10;
+  position: relative;
+}
 body .page .intro .background-img {
   width: 100%;
-  height: 500px;
+  height: 650px;
 }
 body .page .intro .background-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: opacity(30%);
+  filter: opacity(40%);
 }
 body .page .intro .intro-main {
-  margin-top: -350px;
+  margin-top: -480px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 90;
   position: relative;
+}
+body .page .intro .intro-main h1 {
+  font-size: 60px;
+  font-weight: 1000;
+  color: white;
+}
+body .page .intro .intro-main p {
+  color: white;
+  margin-bottom: 90px;
+}
+body .page .intro .intro-main .see-more-btn button {
+  padding: 12px 30px;
+  border-radius: 3px;
+  border: none;
+  background-color: #ea1e63;
+  color: white;
+}
+body .page .intro .intro-main .see-more-btn button:hover {
+  box-shadow: #ea1e63 0px 0px 20px;
+  cursor: pointer;
+}
+body .page .main {
+  background-color: white;
+  border-radius: 5px;
+  margin-top: -60px;
+  width: 95%;
+  box-shadow: black 0px 0px 30px;
+  position: relative;
+  z-index: 100;
+  color: #3d4859;
+}
+body .page .main .what-we-stand-for {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .page .main .what-we-stand-for .stand-title {
+  margin: 20px;
+  font-size: 20px;
+}
+body .page .main .what-we-stand-for .square-section {
+  width: 85%;
+  display: flex;
+}
+body .page .main .what-we-stand-for .square-section .responsive,
+body .page .main .what-we-stand-for .square-section .quality,
+body .page .main .what-we-stand-for .square-section .support {
+  padding: 2%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 25px;
+  font-size: 13px;
+}
+body .page .main .what-we-stand-for .square-section .responsive p,
+body .page .main .what-we-stand-for .square-section .quality p,
+body .page .main .what-we-stand-for .square-section .support p {
+  color: #a5a5a5;
+}
+body .page .main .what-we-stand-for .square-section .responsive img,
+body .page .main .what-we-stand-for .square-section .quality img,
+body .page .main .what-we-stand-for .square-section .support img {
+  width: 20%;
+}
+body .page .main .about-hestia {
+  width: 100%;
+  height: 300px;
+  background-image: url(../images/city.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .page .main .about-hestia .about-left {
+  width: 80%;
+  color: white;
+  margin: 0px 0px 0px 150px;
+  display: flex;
+  flex-direction: column;
+}
+body .page .main .about-hestia .about-left p {
+  width: 80%;
+}
+body .page .main .about-hestia .about-right img {
+  width: 80%;
+}
+body .page .main .blog {
+  margin: 80px 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .page .main .blog h2 {
+  margin-bottom: 100px;
+  font-size: 30px;
+}
+body .page .main .blog .blog-options {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+body .page .main .blog .blog-options .blog1,
+body .page .main .blog .blog-options .blog2,
+body .page .main .blog .blog-options .blog3 {
+  width: 330px;
+}
+body .page .main .blog .blog-options .blog1 p,
+body .page .main .blog .blog-options .blog2 p,
+body .page .main .blog .blog-options .blog3 p {
+  font-size: 13px;
+  line-height: 24px;
+  color: #a5a5a5;
+}
+body .page .main .blog .blog-options .blog1 a {
+  color: #89229b;
+}
+body .page .main .blog .blog-options .blog2 a {
+  color: #01bcd5;
+}
+body .page .main .blog .blog-options .blog3 a {
+  color: #f54336;
+}
+body .page .main .get-in-touch {
+  padding-left: 150px;
+  height: 500px;
+  background-image: url(../images/city.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+body .page .main .get-in-touch p {
+  margin-top: -10px;
+  margin-left: 40px;
+}
+body .page .main .get-in-touch .office,
+body .page .main .get-in-touch .phone-ring {
+  display: flex;
+  align-items: center;
+}
+body .page .main .get-in-touch .office i,
+body .page .main .get-in-touch .phone-ring i {
+  margin-right: 15px;
+  font-size: 30px;
 }/*# sourceMappingURL=index.css.map */

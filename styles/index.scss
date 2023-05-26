@@ -1,16 +1,21 @@
 @import "variables.scss";
+@import "mixins.scss";
 
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
-  background-color: #676767;
+  background-color: white;
   font-family: "Noto Sans", sans-serif;
   a {
     text-decoration: none;
     color: black;
   }
   .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .header {
       background-color: white;
       display: flex;
@@ -19,7 +24,7 @@ body {
       width: 100%;
       position: sticky;
       top: 0;
-      z-index: 100;
+      z-index: 101;
       .logo-left,
       nav {
         margin: 10px 100px;
@@ -28,7 +33,10 @@ body {
           border-radius: 25px;
           background-color: $pink-color;
           color: white;
-          box-shadow: grey 0px 3px 5px;
+          // box-shadow: grey 0px 1px 5px;
+          &:hover {
+            @include pink-hover;
+          }
         }
       }
       nav {
@@ -37,36 +45,191 @@ body {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        .nav-link {
+          &:hover {
+            @include pink-letter;
+          }
+        }
       }
     }
     .intro {
+      height: 650px;
+      width: 100%;
+      background-color: black;
+      z-index: 10;
+      position: relative;
       .background-img {
         width: 100%;
-        height: 500px;
+        height: 650px;
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          filter: opacity(30%);
+          filter: opacity(40%);
         }
       }
-      // margin-top: -25px;
-      // height: 500px;
-      // background-image: url("../images/statue-of-liberty.jpg");
-      // background-position: center;
-      // background-size: cover;
-      // background-attachment: fixed;
-      // filter: opacity(40%);
       .intro-main {
-        margin-top: -350px;
+        margin-top: -480px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        z-index: 90;
         position: relative;
-        // position: absolute;
-        // top: 100px;
+        h1 {
+          font-size: 60px;
+          font-weight: 1000;
+          color: white;
+        }
+        p {
+          color: white;
+          margin-bottom: 90px;
+        }
+        .see-more-btn {
+          button {
+            padding: 12px 30px;
+            border-radius: 3px;
+            border: none;
+            background-color: $pink-color;
+            color: white;
+            &:hover {
+              @include pink-hover;
+            }
+          }
+        }
+      }
+    }
+    .main {
+      background-color: white;
+      border-radius: 5px;
+      margin-top: -60px;
+      width: 95%;
+      box-shadow: black 0px 0px 30px;
+      position: relative;
+      z-index: 100;
+      color: #3d4859;
+      .what-we-stand-for {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .stand-title {
+          margin: 20px;
+          font-size: 20px;
+        }
+        .square-section {
+          width: 85%;
+          display: flex;
+          .responsive,
+          .quality,
+          .support {
+            padding: 2%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            line-height: 25px;
+            font-size: 13px;
+
+            p {
+              color: $grey-letters;
+            }
+            img {
+              width: 20%;
+            }
+          }
+        }
+      }
+      .about-hestia {
+        width: 100%;
+        height: 300px;
+        background-image: url(../images/city.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .about-left {
+          width: 80%;
+          color: white;
+          margin: 0px 0px 0px 150px;
+          display: flex;
+          flex-direction: column;
+          p {
+            width: 80%;
+          }
+        }
+        .about-right {
+          img {
+            width: 80%;
+          }
+        }
+      }
+      .blog {
+        margin: 80px 0px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+          margin-bottom: 100px;
+          font-size: 30px;
+        }
+        .blog-options {
+          display: flex;
+          justify-content: space-between;
+          width: 80%;
+          .blog1,
+          .blog2,
+          .blog3 {
+            width: 330px;
+            p {
+              font-size: 13px;
+              line-height: 24px;
+              color: $grey-letters;
+            }
+          }
+          .blog1 {
+            a {
+              color: #89229b;
+            }
+          }
+          .blog2 {
+            a {
+              color: #01bcd5;
+            }
+          }
+          .blog3 {
+            a {
+              color: #f54336;
+            }
+          }
+        }
+      }
+      .get-in-touch {
+        padding-left: 150px;
+        // width: 100%;
+        height: 500px;
+        background-image: url(../images/city.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        p {
+          margin-top: -10px;
+          margin-left: 40px;
+        }
+        .office,
+        .phone-ring {
+          display: flex;
+          align-items: center;
+          i {
+            margin-right: 15px;
+            font-size: 30px;
+          }
+        }
       }
     }
   }
