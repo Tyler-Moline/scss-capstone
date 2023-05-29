@@ -1,0 +1,56 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+.main .about-main {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 35px;
+  color: #a5a5a5;
+}
+.main .about-main p {
+  margin-top: 12vh;
+}
+.main .about-main h2 {
+  font-size: 32px;
+  color: #3d4859;
+}
+.main .about-main a {
+  color: #ea1e63;
+}
+.main .about-main .comments-section {
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .about-main .comments-section h3 {
+  color: #3d4859;
+  margin: 15px;
+  font-size: 27px;
+}
+.main .about-main .comments-section .leave-a-comment {
+  margin-top: 25px;
+  width: 40vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.main .about-main .comments-section .leave-a-comment img {
+  border-radius: 50px;
+  box-shadow: 0px 7px 10px -5px black;
+}
+.main .about-main .comments-section .leave-a-comment span {
+  margin: -10px 0px 0px 30px;
+}
+.main .about-main .comments-section .leave-a-comment span span {
+  margin: 0px;
+  color: #ea1e63;
+}/*# sourceMappingURL=about.css.map */

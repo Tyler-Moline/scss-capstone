@@ -6,3 +6,23 @@
 @mixin pink-letter {
   color: #ea1e63;
 }
+
+@mixin header-style {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+  box-shadow: 0px 25px 120px -20px rgba(0, 0, 0, 0.34);
+}
+
+@mixin nav-bar-style {
+  padding: 15px 20px;
+  border-radius: 25px;
+  background-color: $pink-color;
+  color: white;
+  scroll-behavior: smooth;
+}

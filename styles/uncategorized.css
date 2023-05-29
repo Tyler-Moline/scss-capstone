@@ -1,0 +1,42 @@
+body .page .uncat-intro {
+  width: 100%;
+  height: 50vh;
+  background: hsl(318, 70%, 40%);
+  background: linear-gradient(45deg, hsl(318, 70%, 40%) 0%, hsl(340, 77%, 56%) 100%);
+  background: -webkit-linear-gradient(45deg, hsl(318, 70%, 40%) 0%, hsl(340, 77%, 56%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .page .uncat-intro h1 {
+  margin-bottom: 10vh;
+  color: white;
+  font-size: 40px;
+}
+body .page .main .blog {
+  width: 100%;
+}
+body .page .main .blog .blog-options {
+  margin-left: 15vw;
+  flex-direction: column;
+}
+body .page .main .blog .blog-options .blog1,
+body .page .main .blog .blog-options .blog2,
+body .page .main .blog .blog-options .blog3 {
+  width: 85%;
+}
+body .page .main .blog .blog-options .blog1 .written-by,
+body .page .main .blog .blog-options .blog2 .written-by,
+body .page .main .blog .blog-options .blog3 .written-by {
+  margin-bottom: 10vh;
+  color: #3d4859;
+}
+body .page .main .blog .blog-options .blog4 span a {
+  color: #ff9901;
+}
+body .page .main .blog .blog-options .blog5 span a {
+  color: #ea1e63;
+}
+body .page .main .blog .blog-options .blog6 span a {
+  color: #4caf50;
+}/*# sourceMappingURL=uncategorized.css.map */

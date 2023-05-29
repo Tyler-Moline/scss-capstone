@@ -1,12 +1,15 @@
 @import "variables.scss";
 @import "mixins.scss";
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   width: 100%;
   height: 100%;
   margin: 0px;
   background-color: white;
   font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
   a {
     text-decoration: none;
     color: black;
@@ -25,6 +28,7 @@ body {
       position: sticky;
       top: 0;
       z-index: 101;
+      box-shadow: 0px 25px 120px -20px rgba(0, 0, 0, 0.34);
       .logo-left,
       nav {
         margin: 10px 100px;
@@ -33,7 +37,7 @@ body {
           border-radius: 25px;
           background-color: $pink-color;
           color: white;
-          // box-shadow: grey 0px 1px 5px;
+          scroll-behavior: smooth;
           &:hover {
             @include pink-hover;
           }
@@ -53,14 +57,14 @@ body {
       }
     }
     .intro {
-      height: 650px;
+      height: 85vh;
       width: 100%;
       background-color: black;
       z-index: 10;
       position: relative;
       .background-img {
         width: 100%;
-        height: 650px;
+        height: 85vh;
         img {
           width: 100%;
           height: 100%;
@@ -111,6 +115,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 100px;
         .stand-title {
           margin: 20px;
           font-size: 20px;
@@ -191,16 +196,40 @@ body {
             }
           }
           .blog1 {
+            h3 {
+              a {
+                color: $main-word-color;
+                &:hover {
+                  color: $grey-letters;
+                }
+              }
+            }
             a {
               color: #89229b;
             }
           }
           .blog2 {
+            h3 {
+              a {
+                color: $main-word-color;
+                &:hover {
+                  color: $grey-letters;
+                }
+              }
+            }
             a {
               color: #01bcd5;
             }
           }
           .blog3 {
+            h3 {
+              a {
+                color: $main-word-color;
+                &:hover {
+                  color: $grey-letters;
+                }
+              }
+            }
             a {
               color: #f54336;
             }
@@ -230,6 +259,45 @@ body {
             font-size: 30px;
           }
         }
+      }
+    }
+    footer {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: hsla(200, 2%, 32%, 1);
+      font-size: 12px;
+      color: white;
+
+      background: radial-gradient(
+        circle,
+        hsla(200, 2%, 32%, 1) 0%,
+        hsla(216, 5%, 21%, 1) 100%
+      );
+
+      background: -moz-radial-gradient(
+        circle,
+        hsla(200, 2%, 32%, 1) 0%,
+        hsla(216, 5%, 21%, 1) 100%
+      );
+
+      background: -webkit-radial-gradient(
+        circle,
+        hsla(200, 2%, 32%, 1) 0%,
+        hsla(216, 5%, 21%, 1) 100%
+      );
+
+      .footer-left {
+        padding-right: 30%;
+        a {
+          color: white;
+          padding-right: 15px;
+        }
+      }
+      .footer-right {
+        padding-left: 30%;
       }
     }
   }
