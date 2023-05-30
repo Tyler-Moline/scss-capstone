@@ -1,0 +1,75 @@
+@import "variables.scss";
+
+.page {
+  .uncat-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin-top: -7vh;
+      color: white;
+    }
+  }
+  .main {
+    .boat-main {
+      margin-top: 50px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .boat {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+      }
+    }
+    .categories {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 20vh;
+      .categories-left {
+        p {
+          span {
+            width: 40px;
+            background-color: $pink-color;
+            border-radius: 50px;
+            padding: 5px 16px;
+            color: white;
+            font-size: 12px;
+          }
+        }
+      }
+      .socials {
+        width: 18%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .social-tag {
+          border-radius: 50px;
+          width: 3vw;
+          height: 3vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          transition: ease-in-out 0.5s;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+        .fb {
+          background-color: #3c5a98;
+        }
+        .twitter {
+          background-color: #56acef;
+        }
+        .email {
+          background-color: #999999;
+        }
+      }
+    }
+  }
+}
